@@ -135,6 +135,10 @@ section h3{
     color: #000;
 }
 
+.project h3{
+    margin-top: 10px;
+}
+
 .data{
     font-size: 12px;
     text-align: right;
