@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+* {
+    font-family: 'Open sans' , sans-serif ;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    @media(min-width:576px)
+}
+
+.information-column{
+    background-color:#000;
+    padding: 40px;
+    color: #fff;
+    text-align: center;
+}
+
+.information-column img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border-color: #850808;
+    border-style: solid;
+    border-width: 1px;
+    margin-bottom: 18px;
+
+}
+
+.information-column hr{
+    border: none;
+    border-bottom: 1px solid #850808;
+    margin-top: 18px;
+
+}
+.information-column h3{
+    text-align: left;
+    margin-top: 20px;
+}
+
+.information-column ul {
+    list-style-type: none;
+}
+
+.information-column li{
+    text-align: left;
+    margin: 10px 0;
+    font-size: 18px;
+
+}
+
+.contact-description i{
+    color: #850808;
+    margin-right: 10px;
+}
+
+.contact-description a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+.education-description{
+    margin-top: 36px;
+}
+
+.education-description p{
+    color: #850808;
+}
+
+.language-description .percent{
+    background-color: #850808;
+    margin-top: 5px;
+    height: 6px;
+    width: 205px;
+    
+}
+
+.language-description p{
+    font-size: 16px;
+}
+
+.language-description .percent div {
+    height: 6px;
+    background-color: rgba(250, 36, 36, 0.616);
+}
+
+.language-description .percent.english div {
+    width: 85%;
+}
+
+.language-description .percent.french div {
+    width: 30%;
+
+}
+
+.experiences-column{
+    padding: 40px;
+    background-color: #fff;
+    text-align: center;
+    color: #000;
+}
+
+.experiences-column h2{
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.experiences-column p{
+    text-align: justify;
+}
+   
+section{
+    margin-bottom: 15px;
+    margin-top: 30px;
+
+}
+
+section h3{
+    text-align: left;
+    font-style:normal;
+    font-size: 16px;
+
+}
+
+.experiences-column .experience{
+    margin-bottom: 14px;
+}
+
+.experiences-column .experience-date{
+    font-size: 14px;
+    
+}
+.experiences-column a{
+    text-decoration: underline;
+    color: #000;
+}
+
+.data{
+    font-size: 12px;
+    text-align: right;
+    padding: 15px;
+}
+
+
+@media (min-width: 992px) {
+    .container{
+        display:flex;
+    }
+    .information-column img{
+        width: 200px;
+        height: 200px;
+    }
+    .experiences-column .experience{
+        display:flex;
+    }
+    .experience-date{
+        width: 300px;
+        height: 88px;
+    }
+    
+}
