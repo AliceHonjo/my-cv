@@ -9,9 +9,9 @@
 }
 
 .information-column{
-    background-color:#000;
+    background-color:#0F0E0E;
     padding: 40px;
-    color: #fff;
+    color: #FFFBEB;
     text-align: center;
 }
 
@@ -19,16 +19,16 @@
     width: 300px;
     height: 300px;
     border-radius: 50%;
-    border-color: #850808;
+    border-color: #FB2576;
     border-style: solid;
-    border-width: 1px;
+    border-width: 2px;
     margin-bottom: 18px;
 
 }
 
 .information-column hr{
     border: none;
-    border-bottom: 1px solid #850808;
+    border-bottom: 1px solid #FB2576;
     margin-top: 18px;
 
 }
@@ -49,13 +49,13 @@
 }
 
 .contact-description i{
-    color: #850808;
+    color: #FA58B6;
     margin-right: 10px;
 }
 
 .contact-description a{
     text-decoration: none;
-    color: #fff;
+    color: #FFFBEB;
     font-size: 18px;
 }
 
@@ -64,11 +64,11 @@
 }
 
 .education-description p{
-    color: #850808;
+    color: #FB2576;
 }
 
 .language-description .percent{
-    background-color: #850808;
+    background-color: #FA58B6;
     margin-top: 5px;
     height: 6px;
     width: 205px;
@@ -81,7 +81,7 @@
 
 .language-description .percent div {
     height: 6px;
-    background-color: rgba(250, 36, 36, 0.616);
+    background-color: #FB2576;
 }
 
 .language-description .percent.english div {
@@ -95,9 +95,9 @@
 
 .experiences-column{
     padding: 40px;
-    background-color: #fff;
+    background-color: #FFFBEB;
     text-align: center;
-    color: #000;
+    color: #0F0E0E;
 }
 
 .experiences-column h2{
@@ -132,7 +132,8 @@ section h3{
 }
 .experiences-column a{
     text-decoration: underline;
-    color: #000;
+    text-decoration-color: #FB2576;
+    color: #0F0E0E;
 }
 
 .project h3{
@@ -143,6 +144,8 @@ section h3{
     font-size: 12px;
     text-align: right;
     padding: 15px;
+    background-color: #FFFBEB;
+    color: #0F0E0E;
 }
 
 
