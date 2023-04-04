@@ -1,17 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 
+:root{
+    --font:'Roboto', sans-serif;
+    --preto:#0F0E0E;
+    --beje:#FFFBEB;
+    --rosa-escuro:#FB2576;
+    --rosa-chiclete:#FA58B6;
+}
 * {
-    font-family: 'Open sans' , sans-serif ;
+    font-family: var(--font) ;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-weight: 400;
     @media(min-width:576px)
 }
 
 .information-column{
-    background-color:#0F0E0E;
+    background-color:var(--preto);
     padding: 40px;
-    color: #FFFBEB;
+    color: var(--beje);
     text-align: center;
 }
 
@@ -19,7 +27,7 @@
     width: 300px;
     height: 300px;
     border-radius: 50%;
-    border-color: #FB2576;
+    border-color: var(--rosa-escuro);
     border-style: solid;
     border-width: 2px;
     margin-bottom: 18px;
@@ -28,60 +36,100 @@
 
 .information-column hr{
     border: none;
-    border-bottom: 1px solid #FB2576;
-    margin-top: 18px;
+    border-bottom: 1px solid var(--rosa-escuro);
+    margin: 1em 0em;
 
 }
-.information-column h3{
-    text-align: left;
+.contact-description h3{
+    text-align: center;
     margin-top: 20px;
+    color: var(--rosa-escuro);
+    font-size: 20px;
+    font-weight: 700;
 }
 
-.information-column ul {
+.contact-description ul {
     list-style-type: none;
 }
 
-.information-column li{
+.contact-description li{
     text-align: left;
-    margin: 10px 0;
-    font-size: 18px;
+    margin: 1em 0em;
+    font-size: 14px;
+    font-weight: 300;
 
 }
 
 .contact-description i{
-    color: #FA58B6;
+    color: var(--rosa-chiclete);
     margin-right: 10px;
 }
 
 .contact-description a{
     text-decoration: none;
-    color: #FFFBEB;
-    font-size: 18px;
+    color: var(--beje);
+    font-size: 14px;
+    font-weight: 300;
 }
 
-.education-description{
-    margin-top: 36px;
+
+.habilidades__titulo{
+    color: var(--rosa-escuro);
+    font-size: 20px;
+    font-weight: 700;
 }
 
-.education-description p{
-    color: #FB2576;
+.habilidades__lista{
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+.habilidades__item{
+    margin: 1em;
+    padding: 0.5em;
+    background-color: var(--rosa-chiclete);
+    border-radius: 5%;
+}
+
+.habilidades__item{
+    list-style: none;
+}
+
+.language-description h3{
+    text-align: center;
+    margin-top: 20px;
+    color: var(--rosa-escuro);
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.language-description ul{
+    list-style-type: none;
 }
 
 .language-description .percent{
-    background-color: #FA58B6;
+    background-color: var(--rosa-chiclete);
     margin-top: 5px;
     height: 6px;
-    width: 205px;
+    width: 100%;
     
 }
 
+.language-description li{
+    text-align: left;
+    margin: 10px 0;
+    font-size: 14px;
+    font-weight: 300;
+}
+
 .language-description p{
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .language-description .percent div {
     height: 6px;
-    background-color: #FB2576;
+    background-color: var(--rosa-escuro);
 }
 
 .language-description .percent.english div {
@@ -89,23 +137,81 @@
 }
 
 .language-description .percent.french div {
-    width: 30%;
+    width: 25%;
 
 }
 
+
+
 .experiences-column{
     padding: 40px;
-    background-color: #FFFBEB;
+    background-color: var(--beje);
     text-align: center;
-    color: #0F0E0E;
+    color: var(--preto);
+}
+
+.experiences-column h2{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.experiences-column p{
+    font-size: 14px;
+}
+
+.education-description{
+    margin-top: 36px;
+}
+
+.education-description h3{
+    text-align: left;
+    color: var(--rosa-escuro);
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 15px ;
+}
+
+.education-description p{
+    color: var(--preto);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.education-description h4{
+    text-align: left;
+    font-size: 14px;
+
+}
+
+.education-description h5{
+    text-align: left;
+    font-size: 14px;
+    margin-bottom: 1em;
+}
+
+.education-description li{
+    list-style: none;
 }
 
 .experiences-column h2{
     margin-bottom: 15px;
     text-align: left;
-    color:#FB2576;
+    color:var(--rosa-escuro);
 }
 
+.experience-date p{
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.experience-date h3{
+    font-size: 15px;
+}
+
+.experience__descricao p{
+    font-size: 14px;
+    font-weight: 300;
+}
 .experiences-column p{
     text-align: justify;
 }
@@ -133,20 +239,45 @@ section h3{
 }
 .experiences-column a{
     text-decoration: underline;
-    text-decoration-color: #FB2576;
-    color: #0F0E0E;
+    text-decoration-color: var(--rosa-escuro);
+    color: var(--preto);
 }
 
 .project h3{
     margin-top: 10px;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--rosa-chiclete);
 }
+
+.project h2{
+    font-size: 20px;
+    font-weight: 700;
+}
+
 
 .data{
     font-size: 12px;
     text-align: right;
     padding: 15px;
-    background-color: #FFFBEB;
-    color: #0F0E0E;
+    background-color: var(--beje);
+    color: var(--preto);
+}
+
+.cursos__complementares__lista{
+    text-align: left;
+    text-decoration: none;
+    color: var(--rosa-chiclete);
+}
+
+.cursos__complementares__itens a {
+    font-size: 14px;
+    margin-bottom: 1em;
+    text-decoration: none;
+}
+
+.descricao__educacional{
+    display: none;
 }
 
 
@@ -166,4 +297,24 @@ section h3{
         height: 88px;
     }
     
+    .descricao__educacional{
+        display: block;
+    }
+
+    .descricao__educacional p{
+        color: var(--beje);
+        text-align: left;
+        font-size: 18px;
+        font-weight: 700;
+        text-decoration:underline;
+        text-decoration-color: var(--rosa-chiclete);
+    }
+
+    .contact-description{
+        margin-top: 4em;
+    }
+
+    .habilidades{
+        margin-bottom: 4em;
+    }
 }
