@@ -1,29 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 
-:root{
-    --font:'Roboto', sans-serif;
-    --preto:#0F0E0E;
-    --beje:#FFFBEB;
-    --rosa-escuro:#FB2576;
-    --rosa-chiclete:#FA58B6;
+:root {
+    --font: 'Roboto', sans-serif;
+    --preto: #0F0E0E;
+    --beje: #FFFBEB;
+    --rosa-escuro: #FB2576;
+    --rosa-chiclete: #FA58B6;
 }
+
 * {
-    font-family: var(--font) ;
+    font-family: var(--font);
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-weight: 400;
     @media(min-width:576px)
 }
-
-.information-column{
-    background-color:var(--preto);
+.information-column {
+    background-color: var(--preto);
     padding: 40px;
     color: var(--beje);
     text-align: center;
 }
-
-.information-column img{
+.information-column img {
     width: 300px;
     height: 300px;
     border-radius: 50%;
@@ -33,294 +32,263 @@
     margin-bottom: 18px;
 
 }
-
-.information-column hr{
+.information-column hr {
     border: none;
     border-bottom: 1px solid var(--rosa-escuro);
     margin: 1em 0em;
 
 }
-.contact-description h3{
+.contact-description h3 {
     text-align: center;
     margin-top: 20px;
     color: var(--rosa-escuro);
     font-size: 20px;
     font-weight: 700;
 }
-
 .contact-description ul {
     list-style-type: none;
 }
-
-.contact-description li{
+.contact-description li {
     text-align: left;
     margin: 1em 0em;
     font-size: 14px;
     font-weight: 300;
 
 }
-
-.contact-description i{
+.contact-description i {
     color: var(--rosa-chiclete);
     margin-right: 10px;
 }
-
-.contact-description a{
+.contact-description a {
     text-decoration: none;
     color: var(--beje);
     font-size: 14px;
     font-weight: 300;
 }
-
-
-.habilidades__titulo{
+.habilidades__titulo {
     color: var(--rosa-escuro);
     font-size: 20px;
     font-weight: 700;
 }
-
-.habilidades__lista{
+.habilidades__lista {
     display: flex;
     justify-content: center;
     gap: 1em;
 }
-
-.habilidades__item{
+.habilidades__item {
     margin: 1em;
     padding: 0.5em;
     background-color: var(--rosa-chiclete);
     border-radius: 5%;
 }
-
-.habilidades__item{
+.habilidades__item {
     list-style: none;
 }
-
-.language-description h3{
+.language-description h3 {
     text-align: center;
     margin-top: 20px;
     color: var(--rosa-escuro);
     font-size: 20px;
     font-weight: 700;
 }
-
-.language-description ul{
+.language-description ul {
     list-style-type: none;
 }
-
-.language-description .percent{
+.language-description .percent {
     background-color: var(--rosa-chiclete);
     margin-top: 5px;
     height: 6px;
     width: 100%;
-    
-}
 
-.language-description li{
+}
+.language-description li {
     text-align: left;
     margin: 10px 0;
     font-size: 14px;
     font-weight: 300;
 }
-
-.language-description p{
+.language-description p {
     font-size: 14px;
 }
-
 .language-description .percent div {
     height: 6px;
     background-color: var(--rosa-escuro);
 }
-
 .language-description .percent.english div {
     width: 85%;
 }
-
 .language-description .percent.french div {
     width: 25%;
 
 }
 
 
-
-.experiences-column{
+.experiences-column {
     padding: 40px;
     background-color: var(--beje);
     text-align: center;
     color: var(--preto);
 }
-
-.experiences-column h2{
+.experiences-column h2 {
     font-size: 20px;
     font-weight: 700;
 }
-
-.experiences-column p{
+.experiences-column p {
     font-size: 14px;
 }
-
-.education-description{
+.education-description {
     margin-top: 36px;
 }
-
-.education-description h3{
+.education-description h3 {
     text-align: left;
     color: var(--rosa-escuro);
     font-size: 20px;
     font-weight: 700;
-    margin-bottom: 15px ;
+    margin-bottom: 15px;
 }
-
-.education-description p{
+.education-description p {
     color: var(--preto);
     font-size: 16px;
     font-weight: 700;
 }
-
-.education-description h4{
+.education-description h4 {
     text-align: left;
     font-size: 14px;
 
 }
-
-.education-description h5{
+.education-description h5 {
     text-align: left;
     font-size: 14px;
     margin-bottom: 1em;
 }
-
-.education-description li{
+.education-description li {
     list-style: none;
 }
-
-.experiences-column h2{
+.experiences-column h2 {
     margin-bottom: 15px;
     text-align: left;
-    color:var(--rosa-escuro);
+    color: var(--rosa-escuro);
 }
-
-.experience-date p{
+.experience-date p {
     font-size: 16px;
     font-weight: 700;
 }
-
-.experience-date h3{
+.experience-date h3 {
     font-size: 15px;
 }
-
-.experience__descricao p{
+.experience__descricao p {
     font-size: 14px;
     font-weight: 300;
 }
-.experiences-column p{
+.experiences-column p {
     text-align: justify;
 }
-   
-section{
+section {
     margin-bottom: 15px;
     margin-top: 30px;
 
 }
-
-section h3{
+section h3 {
     text-align: left;
-    font-style:normal;
+    font-style: normal;
     font-size: 16px;
 
 }
-
-.experiences-column .experience{
+.experiences-column .experience {
     margin-bottom: 14px;
 }
-
-.experiences-column .experience-date{
+.experiences-column .experience-date {
     font-size: 14px;
-    
+
 }
-.experiences-column a{
+.experiences-column a {
     text-decoration: underline;
     text-decoration-color: var(--rosa-escuro);
     color: var(--preto);
 }
-
-.project h3{
+.project h3 {
     margin-top: 10px;
     font-size: 14px;
     font-weight: 700;
     color: var(--rosa-chiclete);
 }
-
-.project h2{
+.project h2 {
     font-size: 20px;
     font-weight: 700;
 }
-
-
-.data{
+.data {
     font-size: 12px;
     text-align: right;
     padding: 15px;
     background-color: var(--beje);
     color: var(--preto);
 }
-
-.cursos__complementares__lista{
+.cursos__complementares__lista {
     text-align: left;
     text-decoration: none;
     color: var(--rosa-chiclete);
 }
-
 .cursos__complementares__itens a {
     font-size: 14px;
     margin-bottom: 1em;
     text-decoration: none;
 }
-
-.descricao__educacional{
+.descricao__educacional {
     display: none;
 }
 
-
 @media (min-width: 992px) {
-    .container{
-        display:flex;
+    .container {
+        display: flex;
 
     }
-    .information-column img{
+    .information-column img {
         width: 200px;
         height: 200px;
     }
-   
-    .experiences-column .experience{
-        display:flex;
+    .experiences-column .experience {
+        display: flex;
     }
-    .experience-date{
+    .experience-date {
         width: 300px;
         height: 88px;
     }
-    
-    .descricao__educacional{
+    .descricao__educacional {
         display: block;
     }
-
-    .descricao__educacional p{
-        color: var(--beje);
+    .descricao__educacional h3 {
+        text-align: center;
+        color: var(--rosa-escuro);
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 15px;
+    }
+    .descricao__educacional h4{
+        text-align: left;
+        font-size: 14px;
+    }
+    .descricao__educacional h5{
+        text-align: left;
+        font-size: 14px;
+        margin-bottom: 1em;
+    }
+    .descricao__educacional p {
+        color: var(--rosa-chiclete);
         text-align: left;
         font-size: 18px;
         font-weight: 700;
-        text-decoration:underline;
-        text-decoration-color: var(--rosa-chiclete);
+        text-decoration: none;
     }
-
+    .descricao__educacional li{
+        list-style: none;
+    }
     .education-description {
         display: none;
     }
-
-    .contact-description{
+    .contact-description {
         margin-top: 4em;
     }
-
-    .habilidades{
+    .habilidades {
         margin-bottom: 4em;
     }
 }
