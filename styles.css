@@ -237,6 +237,24 @@ section h3 {
     display: none;
 }
 
+
+.atividades {
+    margin-top: 2.5em;
+}
+.atividades h3{
+    color: var(--rosa-escuro);
+    font-size: 20px;
+    font-weight: 700;
+}
+.atividades p{
+    font-size: 14px;
+    color: var(--beje);
+}
+.atividades li{
+    text-align: left;
+    color: var(--rosa-chiclete);
+    padding: 2px
+}
 @media (min-width: 992px) {
     .container {
         display: flex;
